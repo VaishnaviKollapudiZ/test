@@ -1,0 +1,54 @@
+{
+  "name": "greencommute-v4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "webpack-dev-server --config ./webpack.config.js --port 8080 --disable-host-check",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/*.stories.tsx",
+      "**/*.{js, ts, tsx}",
+      "**/*.test.{js, ts, tsx}"
+    ]
+  },
+  "keywords": [],
+  "author": "K.Vaishnavi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/react": "^6.3.4",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.6.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.4",
+    "@types/jest": "^26.0.24",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-select": "^4.3.1",
+    "sonar-scanner": "^3.1.0"
+  }
+}
